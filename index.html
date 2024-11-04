@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Monthsary!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7e8f1;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+        h1 {
+            color: #d14567;
+        }
+        .content {
+            max-width: 600px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            max-width: 500px; /* Adjusted max width */
+            border-radius: 10px; /* Optional */
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .heart {
+            font-size: 50px;
+            color: #d14567;
+            margin-top: 10px;
+            animation: heartbeat 1.5s infinite;
+        }
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body>
+   <audio id="background-music" loop>
+    <source src="Best Part.mp3" type="audio/mpeg">
+    <!-- Fallback message for unsupported browsers -->
+    Your browser does not support the audio element.
+</audio>
+
+<!-- Play Button -->
+<button onclick="document.getElementById('background-music').play()">Play Music</button>
+    <div class="content">
+        <h2>Happy Monthsary, Valerie</h2>
+        
+        <!-- Image Section -->
+        <div class="image-container">
+            <img src="my baby.jpg" alt="A special memory" />
+        </div>
+        
+        <p> Happy 1st Monthsary, my babi, my love, my pooks, my baby girl, my honeybunch sugar plum boo boo bear, my ml player valerie, my everything, my future wife, my langga. 
+        </p>
+        <p> <!-- Paragraph 2 -->
+            <!-- Another message here if you'd like. -->
+        </p>
+        <p> <!-- Add more messages if needed. -->
+        </p>
+        <div class="heart">❤️</div>
+    </div>
+</body>
+</html>
